@@ -14,8 +14,7 @@ class BodyOfDetailScreenWidget extends StatelessWidget {
         child: Column(
           children: [
             Hero(
-              tag:
-                  'https://restaurant-api.dicoding.dev/images/large/${restaurant.pictureId}',
+              tag: 'https://restaurant-api.dicoding.dev/images/large/${restaurant.pictureId}',
               child: Image.network(
                 'https://restaurant-api.dicoding.dev/images/large/${restaurant.pictureId}',
                 fit: BoxFit.cover,
@@ -37,9 +36,9 @@ class BodyOfDetailScreenWidget extends StatelessWidget {
                       Text(
                         restaurant.city,
                         style: Theme.of(context)
-                            .textTheme
-                            .labelLarge
-                            ?.copyWith(fontWeight: FontWeight.w400),
+                          .textTheme
+                          .labelLarge
+                          ?.copyWith(fontWeight: FontWeight.w400),
                       ),
                     ],
                   ),

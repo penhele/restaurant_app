@@ -9,7 +9,6 @@ import 'package:restaurant_app/screen/detail/body_of_detail_screen_widget.dart';
 import 'package:restaurant_app/static/restaurant_detail_result_state.dart';
 
 class DetailScreen extends StatefulWidget {
-  // ini
   final String restaurantId;
 
   const DetailScreen({
@@ -28,8 +27,8 @@ class _DetailScreenState extends State<DetailScreen> {
 
     Future.microtask(() {
       context
-          .read<RestaurantDetailProvider>()
-          .fetchRestaurantDetail(widget.restaurantId);
+        .read<RestaurantDetailProvider>()
+        .fetchRestaurantDetail(widget.restaurantId);
     });
   }
 
